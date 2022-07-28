@@ -5,14 +5,18 @@
   "scripts": {
     "start": "nx serve",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "start:keycloak": "docker-compose --env-file ./env/.env.development up -d --build",
+    "stop:keycloak": "docker-compose --env-file ./env/.env.development down"
   },
   "private": true,
   "dependencies": {
+    "@react-keycloak/web": "^3.4.0",
     "core-js": "^3.6.5",
+    "keycloak-js": "^18.0.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "react-router-dom": "6.3.0",
+    "react-router-dom": "^6.3.0",
     "regenerator-runtime": "0.13.7",
     "tslib": "^2.3.0"
   },
