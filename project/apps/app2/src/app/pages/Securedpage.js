@@ -5,7 +5,7 @@ const Secured = () => {
 
  return (
    <div>
-     <h1 className="text-black text-4xl">Welcome to the Protected Page of App 1</h1>
+     <h1 className="text-black text-4xl">Welcome to the Protected Page of App 2</h1>
    </div>
  );
 };
